@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Background Image Size Change into Small when Scrolling</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header"></div>
+            <section>
+                <h2>Background Image Size Change into Small when Scrolling</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae saepe, neque, explicabo, a sint fugiat labore incidunt sunt veritatis dolorum quos dolore voluptates nam est enim numquam eius quae aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corrupti itaque veritatis rem mollitia ipsam harum error neque, officiis perspiciatis consequatur assumenda, necessitatibus beatae? Iste dolorem quo dolorum sequi odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sed laudantium sunt nam. Porro sed nulla consequuntur aspernatur aliquid autem totam expedita in nisi, praesentium rerum vitae molestiae natus accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae saepe, neque, explicabo, a sint fugiat labore incidunt sunt veritatis dolorum quos dolore voluptates nam est enim numquam eius quae aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corrupti itaque veritatis rem mollitia ipsam harum error neque, officiis perspiciatis consequatur assumenda, necessitatibus beatae? Iste dolorem quo dolorum sequi odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sed laudantium sunt nam. Porro sed nulla consequuntur aspernatur aliquid autem totam expedita in nisi, praesentium rerum vitae molestiae natus accusamus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae saepe, neque, explicabo, a sint fugiat labore incidunt sunt veritatis dolorum quos dolore voluptates nam est enim numquam eius quae aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corrupti itaque veritatis rem mollitia ipsam harum error neque, officiis perspiciatis consequatur assumenda, necessitatibus beatae? Iste dolorem quo dolorum sequi odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sed laudantium sunt nam. Porro sed nulla consequuntur aspernatur aliquid autem totam expedita in nisi, praesentium rerum vitae molestiae natus accusamus! Lorem ipsum</p>
+            </section>
+            <script type="text/javascript">
+                const bg = document.getElementById('header');
+                window.addEventListener('scroll', function() {
+                    bg.style.backgroundSize = 160 - + window.pageYOffset/10+'%';
+                    bg.style.opacity = 1 - +window.pageYOffset/700+'';
+                });
+            </script>
+    </body>
+</html>
